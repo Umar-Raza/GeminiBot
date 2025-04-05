@@ -1,6 +1,26 @@
-.gradient-theme {
-    background: #00d2ff;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #928DAB, #00d2ff);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #928DAB, #00d2ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  }
-  
+.massages {
+  display: flex;
+  flex-direction: column;
+}
+
+.massages .userMsg {
+  clear: both;
+  background-color: #2b2929;
+  padding: 15px;
+  ;
+  border-radius: 30px;
+  max-width: 60vw;
+  min-width: 20vw;
+  align-self: flex-end;
+}
+
+.massages .responseMsg {
+  clear: both;
+  background-color: #2b2929;
+  padding: 15px;
+  margin-top: 15px ;
+  border-radius: 30px;
+  max-width: 60vw;
+  align-self: flex-start;
+  min-width: 20vw;
+}
