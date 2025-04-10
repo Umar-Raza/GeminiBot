@@ -24,7 +24,7 @@ export const Home = () => {
         }
     }
     const generateResponse = (msg) => {
-       setIsLoading(true)
+        setIsLoading(true)
         let allMassages = []
         const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_APP_GEMkEY });
         async function main() {
@@ -52,17 +52,21 @@ export const Home = () => {
         }
         main();
     }
+    const newChat = () => {
+        setIsResponsScreen(false);
+        setMessages([]); // Clear the messages array
+    }
     return (
         <>
             <div className="container w-screen min-h-screen">
                 {
                     isResponsScreen ?
                         <div className="h-[80vh]">
-                            {/* <div className="header flex items-center justify-between w-[100vw] pt-[30px] px-[140px]">
-                                <h2 className='bg-[#181818] p-3 rounded-2xl  font-bold  text-[#ef476f]'>GeminiBot</h2>
-                                <button className='btn btn-soft  border-[#ef476f] text-[#ef476f]'>New Chat </button>
-                            </div> */}
-                            
+                            <div className="header flex items-center justify-between w-[100vw] pt-[30px] px-[140px]">
+                                <h2 className=' p-3 rounded-2xl  font-bold  text-[#F698AE]'>GeminiBot</h2>
+                                <button className='btn btn-soft  border-[#F698AE] text-[#F698AE]' onClick={newChat}>New Chat </button>
+                            </div>
+
                             <div className="massages flex items-center justify-between w-[100vw] pt-[30px] px-[140px]">
                                 {
                                     allMassages.map((msg, index) => {
@@ -76,7 +80,7 @@ export const Home = () => {
                             </div>
                         </div> :
                         <div className="middle h-[80vh] flex items-center flex-col justify-center">
-                            <h1 className='text-4xl'>GeminiBot</h1>
+                            <h1 className='text-4xl mb-4'>GeminiBot</h1>
                             <div className="boxes mt-8 flex items-center gap-4">
                                 <div className="card rounded-lg cursor-pointer transition-all hover:bg-[#1e1e1e] px-6 relative min-h-[17vh] bg-[#181818] p-[10px]">
                                     <p className="text-[18px]">what is coding ?<br />

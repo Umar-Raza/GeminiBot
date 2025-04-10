@@ -4,26 +4,7 @@ import { GoogleGenAI } from "@google/genai";
 
 export const SearchInput = () => {
 
-    const [question, setQuestion] = useState("")
-    const handleRequest = () => {
-        if (question) {
-            generateResponse(question)
-        } else {
-            alert("you must write somthing...!")
-        }
-    }
-    const generateResponse = (msg) => {
-        const ai = new GoogleGenAI({ apiKey: "AIzaSyAzDRaBem-CLVrH7I1qtA1Ml4xknQfKAE0" });
-        async function main() {
-            const response = await ai.models.generateContent({
-                model: "gemini-2.0-flash",
-                contents: msg,
-            });
-            console.log(response.text);
-        }
-
-        main();
-    }
+  
 
     return (
         // <>
