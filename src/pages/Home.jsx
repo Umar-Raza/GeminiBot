@@ -117,7 +117,7 @@ export const Home = () => {
                             }
                         </button>
                     </div>
-                    <p className='mt-10 text-center text-[gray] text-sm sm:text-base'>GeminiBot is developed by <span className=' text-[#F698AE] hover:text-[#f58ca4]' loading="lazy"> <a target='_blank' href="https://mu-portfolio.web.app/">Muhammad Umar</a></span>&#128151;. by using the Gemini API for giving the response.</p>
+                    <p className='mt-10 text-center text-[gray] text-sm sm:text-base'>GeminiBot is developed by <span className=' text-[#F698AE] hover:text-[#f58ca4]' loading="lazy"> <a target='_blank' href="https://mu-portfolio.web.app/">Muhammad Umar</a></span>&#128151; by using the Gemini API.</p>
                 </div >
             </div>
         </>
