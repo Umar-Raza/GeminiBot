@@ -58,16 +58,16 @@ export const Home = () => {
     }
     return (
         <>
-            <div className="container w-screen min-h-screen flex flex-col items-center"> {/* Added flex and items-center to the main container */}
+            <div className="container w-screen min-h-screen text-white flex flex-col items-center"> {/* Added flex and items-center to the main container */}
                 {
                     isResponsScreen ?
                         <div className="h-[80vh] w-full flex flex-col items-center"> {/* Added flex and items-center */}
                             <div className="header flex items-center justify-between w-full pt-[30px] px-4 sm:px-10 md:px-20 lg:px-[140px]">
-                                <h2 className=' p-3 rounded-2xl  font-bold  text-[#F698AE]'>GeminiBot</h2>
-                                <button className='btn btn-soft  border-[#F698AE] text-[#F698AE]' onClick={newChat}>New Chat </button>
+                                <h2 className=' p-3 rounded-2xl  font-bold text-[#F698AE]'>GeminiBot</h2>
+                                <button className='btn btn-soft border-[#F698AE] text-[#F698AE] bg-[#1A2027]' onClick={newChat}>New Chat </button>
                             </div>
 
-                            <div className="massages flex flex-col items-start w-full pt-[30px] px-4 sm:px-10 md:px-20 lg:px-[140px]">
+                            <div className="massages  flex flex-col items-start w-full pt-[30px] px-4 sm:px-10 md:px-20 lg:px-[140px]">
                                 {
                                     allMassages.map((msg, index) => {
                                         return (
@@ -79,7 +79,7 @@ export const Home = () => {
                                 }
                             </div>
                         </div> :
-                        <div className="middle h-[80vh] flex items-center flex-col justify-center w-full"> {/* Added w-full */}
+                        <div className="middle h-[80vh] text-white flex items-center flex-col justify-center w-full"> {/* Added w-full */}
                             <h1 className='text-4xl mb-4'>GeminiBot</h1>
                             <div className="boxes mt-8 flex flex-wrap items-center justify-center gap-4 px-4 sm:px-10 md:px-20 lg:px-0"> {/* Added justify-center */}
                                 <div className="card rounded-lg cursor-pointer transition-all  hover:bg-[#1e1e1e]  sm:px-6 relative min-h-[17vh] bg-[#181818] p-[10px] w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
@@ -109,7 +109,7 @@ export const Home = () => {
                         </div>
                 }
                 <div className="bottom w-full flex flex-col items-center">
-                    <div className="inputBox w-[90%] sm:w-[70%] text-[15px] py-[7px] flex items-center bg-[rgb(24,24,24)] rounded-[30px]">
+                    <div className="inputBox text-white w-[90%] sm:w-[60%] text-[15px] py-[7px] flex items-center bg-[rgb(24,24,24)] rounded-[30px]">
                         <input type="text" value={question} onChange={(e) => { setQuestion(e.target.value) }} className='p-4 flex-1 bg-transparent outline-0 border-0 :bg-white' placeholder='Write your message here...' id='searchBox' />
                         <button className='mr-3' disabled={isLoading}>
                             {
@@ -117,7 +117,7 @@ export const Home = () => {
                             }
                         </button>
                     </div>
-                    <p className='mt-10 text-center text-[gray] text-sm sm:text-base'>GeminiBot is developed by <span className=' text-[#F698AE] hover:text-[#f58ca4]' loading="lazy"> <a target='_blank' href="https://mu-portfolio.web.app/">Muhammad Umar</a></span>&#128151; by using the Gemini API.</p>
+                    <p className='mt-10 text-center text-[gray] py text-sm sm:text-base'>GeminiBot is developed by <span className=' text-[#F698AE] hover:text-[#f58ca4]' loading="lazy"> <a target='_blank' href="https://mu-portfolio.web.app/">Muhammad Umar</a></span>&#128151; by using the Gemini API.</p>
                 </div >
             </div>
         </>

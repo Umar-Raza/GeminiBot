@@ -6,9 +6,12 @@ import { Home } from './pages/Home'
 function App() {
 
   return (
-    <>
+    < >
       {/* <Navbar /> */}
-      <Home />
+      <div className="bg-[#1A2027]">
+
+        <Home />
+      </div>
     </>
   )
 }
