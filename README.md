@@ -69,6 +69,7 @@ geminibot-app/
 * **Muhammad Umar**
     * [Portfolio](https://mu-portfolio.web.app/)
     * [GitHub](https://github.com/Umar-Raza)
+    * [Facebook](https://facebook.com/muhammadumar63)
 
 ## Acknowledgements
 
@@ -79,7 +80,7 @@ geminibot-app/
 
 ## Feedback and Suggestions
 
-If you have any feedback, suggestions, or encounter any issues, feel free to reach out to [Muhammad Umar](mailto:umardev92@gmail.com) (replace with actual email).
+If you have any feedback, suggestions, or encounter any issues, feel free to reach out to [Muhammad Umar](mailto:umardev92@gmail.com).
 
 ---
 
